@@ -9,7 +9,7 @@ Teams and projects should feel free to create a shared branch for projects
 that can serve as a starting-point.
 
 For example the following structure could be used:
-
+```text
                ┌────┐
           ┌───►│dev1│
           │    └────┘
@@ -23,6 +23,7 @@ For example the following structure could be used:
           │    ┌────┐     └──►│dev2│
           └───►│dev3│         └────┘
                └────┘
+```
 
 In this scenario everyone is welcome to have as many top-level branches as they
 want for different purposes. Then they can also project-specifc shared starting
