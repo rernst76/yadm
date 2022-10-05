@@ -72,8 +72,6 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git extract ssh-agent kubectl)
 
-zstyle :omz:plugins:ssh-agent identities id_iq_ado
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -101,7 +99,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Set up pyenv 
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
 export PATH="$HOME/.local/bin:$PATH"
 
 
