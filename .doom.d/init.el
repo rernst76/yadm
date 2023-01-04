@@ -194,4 +194,4 @@
        (default +bindings +smartparens))
 
 ;; Maximize on start
-(setq initial-frame-alist '((top . 0) (left . 0) (width . 250) (height . 100)))
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
