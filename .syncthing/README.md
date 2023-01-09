@@ -35,7 +35,5 @@ for what is syncing.
 Always start by sharing a folder with this instance, and then synchronize it as needed
 on other computers.
 
-The ip as of 1/2/2023 is: 3.128.181.12
-
 
 
