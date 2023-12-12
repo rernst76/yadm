@@ -35,5 +35,18 @@ for what is syncing.
 Always start by sharing a folder with this instance, and then synchronize it as needed
 on other computers.
 
+## Cron Job to Fix Syncthing Startup Issue
+
+Syncthing, when run in this fashion (Docker Compose), seems to sometimes not properly pick
+up it's configuration. We can test this by seeing if it asks us to log in via http basic
+auth.
+
+To address this I have added two scripts:
+
+`check-syncthing.sh` and `register-check.sh`
+
+One is the actual check that is run, and the other registers a job with cron
+to run the check 5 minutes after reboot and every 30 minutes.
+
 
 
