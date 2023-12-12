@@ -70,7 +70,10 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract ssh-agent aws)
+plugins=(git extract ssh-agent aws vi-mode)
+
+# Setup vi-mode settings
+VI_MODE_SET_CURSOR=true
 
 source $ZSH/oh-my-zsh.sh
 
