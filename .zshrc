@@ -109,8 +109,11 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 
+# For tmuxp
+export DISABLE_AUTO_TITLE='true'
 
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
